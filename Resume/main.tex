@@ -1,0 +1,113 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+\begin{document}
+%\lastupdated
+
+\namesection{Alex}{Taylor}{
+\href{mailto:alex.taylor@example.com}{alex.taylor@example.com} | +1 (555) 010-2000 \\
+\href{https://github.com/alextaylor}{github.com/alextaylor} | \href{https://www.linkedin.com/in/alextaylor}{linkedin.com/in/alextaylor}
+}
+
+\begin{minipage}[t]{0.33\textwidth}
+
+\section{Education}
+\descript{State University}
+\descript{B.S. in Computer Science}
+\location{May 2023 | Boston, MA}
+\sectionsep
+
+\section{Skills}
+\location{Languages:}
+Python \textbullet{} JavaScript \textbullet{} TypeScript \textbullet{} SQL \\
+\location{Frameworks:}
+React \textbullet{} Node.js \textbullet{} FastAPI \textbullet{} Flask \\
+\location{Tools:}
+Git \textbullet{} Docker \textbullet{} AWS \textbullet{} Linux \textbullet{} PostgreSQL
+\sectionsep
+
+\section{Links}
+\descript{GitHub}
+\href{https://github.com/alextaylor}{\color{blue}{github.com/alextaylor}}\\
+\descript{LinkedIn}
+\href{https://www.linkedin.com/in/alextaylor}{linkedin.com/in/alextaylor}\\
+\descript{Portfolio}
+\href{https://alextaylor.dev}{alextaylor.dev}\\
+\sectionsep
+
+\section{Certifications}
+AWS Certified Cloud Practitioner\\
+Google Data Analytics Certificate\\
+\sectionsep
+
+\section{Awards}
+Dean's List (2021-2023)\\
+Hackathon Finalist (City Tech Hack 2022)\\
+\sectionsep
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+\section{Experience}
+
+\runsubsection{Acme Tech}
+\descript{| Software Engineer}
+\location{July 2023 - Present | Remote}
+Built and maintained backend services for customer onboarding workflows, reducing average account setup time by 35\%. Partnered with product and design to ship a self-serve dashboard used by 10K+ monthly users.
+\sectionsep
+
+\runsubsection{Northwind Labs}
+\descript{| Software Engineering Intern}
+\location{May 2022 - Aug 2022 | Seattle, WA}
+Implemented API endpoints and integration tests for analytics pipelines, improving release confidence and cutting regressions. Created internal tooling to automate dataset validation across staging environments.
+\sectionsep
+
+\section{Projects}
+
+\runsubsection{TaskFlow}
+\descript{| React, TypeScript, Node.js}
+Created a team task planner with role-based permissions, real-time updates, and calendar sync. Deployed the app on AWS with CI/CD using GitHub Actions.
+\sectionsep
+
+\runsubsection{InsightBoard}
+\descript{| Python, FastAPI, PostgreSQL}
+Developed a reporting service that ingests event data and generates KPI dashboards. Added caching and background jobs to reduce report generation time by 60\%.
+\sectionsep
+
+\section{Leadership}
+\runsubsection{Computer Science Club}
+\descript{| Technical Mentor}
+\location{2021 - 2023}
+Mentored students on interview preparation, resume reviews, and full-stack project development.
+\sectionsep
+
+\end{minipage}
+\end{document}

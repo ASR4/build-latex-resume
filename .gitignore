@@ -1,0 +1,30 @@
+# LaTeX build artifacts
+Resume/build/
+/build/
+*.aux
+*.log
+*.out
+*.xdv
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Personal information (optional - uncomment if you want to exclude main.tex)
+# Resume/main.tex
+Resume/main.personal.tex
+
+# PDF output (optional - uncomment if you don't want to track PDFs)
+# *.pdf
+
