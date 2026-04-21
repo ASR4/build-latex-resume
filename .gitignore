@@ -1,5 +1,4 @@
 # LaTeX build artifacts
-Resume/build/
 /build/
 *.aux
 *.log
@@ -22,8 +21,8 @@ Resume/build/
 .DS_Store
 
 # Personal information (optional - uncomment if you want to exclude main.tex)
-# Resume/main.tex
-Resume/main.personal.tex
+# main.tex
+main.personal.tex
 
 # PDF output (optional - uncomment if you don't want to track PDFs)
 # *.pdf
